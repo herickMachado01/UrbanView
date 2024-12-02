@@ -1,5 +1,10 @@
+ 
+ .body{
+    background-color: #ebebeb;
+ }
  body, .navbar, .offcanvas {
             font-family: 'Montserrat', sans-serif;
+            
         }
 
         /* ----- Estilo para Desktop ----- */
@@ -14,14 +19,14 @@
             }
 
             .info-container h1 {
-                font-size: 2.5rem; /* Tamanho do título maior */
-                color: #001d61;
+                font-size: 2.2rem; /* Tamanho do título maior */
+                color: #000000;
                 
                 
             }
 
             .info-container li {
-                font-size: 1.5rem; /* Texto do subtítulo */
+                font-size: 1.2rem; /* Texto do subtítulo */
                 list-style: none;
                 color: #666;
                 margin-top: -10px;
@@ -63,7 +68,7 @@
 
             .info-container h1 {
                 font-size: 2rem; /* Tamanho do título reduzido */
-                color: #001d61;
+                color: #000000;
             }
 
             .info-container li {
@@ -99,3 +104,122 @@
                 
             }
         }
+
+        /* Estilo para o conteúdo de texto */
+.text-content h1 {
+    font-size: 2.2rem; /* Tamanho menor para o título */
+    font-weight: 600;
+    margin-left: 55px;
+    color: #000000;
+}
+
+.text-content p {
+    font-size: 1.1rem; /* Tamanho menor para o texto */
+    line-height: 1.6; /* Espaçamento entre linhas */
+    color: #000000;
+    margin-left: 55px;
+}
+
+/* Estilo da logo */
+.logo {
+    max-width: 100%;
+    height: auto;
+    max-height: 300px; /* Ajusta o tamanho da logo */
+    margin-top: 50px;
+}
+
+/* Ajuste responsivo */
+@media (max-width: 768px) {
+    .text-content h1 {
+        font-size: 1.8rem;
+        margin-left: 10px;
+    }
+
+    .text-content p {
+        font-size: 1rem;
+        margin-left: 10px;
+    }
+
+    .logo {
+        max-height: 200px; /* Diminui o tamanho da logo em telas menores */
+    }
+}
+
+/* Contêiner para os cards alinhados lado a lado */
+.card-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 20px 0;
+}
+
+/* Estilo geral dos cards */
+.card {
+    background-color: #f0f8ff; /* Cor suave de fundo */
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 280px;
+    margin: 10px;
+    opacity: 0; /* Inicialmente invisível */
+    transform: translateY(100px); /* Deslocamento inicial */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Adicionando ícones ao lado do título */
+.card i {
+    color: #001d61; /* Cor dos ícones */
+    margin-bottom: 15px;
+}
+
+/* Títulos e descrição */
+.card h3 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.card p {
+    font-size: 1rem;
+    color: #666;
+    margin-top: 0;
+}
+
+/* Efeito de hover - Animação */
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Efeito de aparecer os cards */
+.card.show {
+    opacity: 1;
+    transform: translateY(0);
+    transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+}
+
+/* Responsividade para telas menores */
+@media (max-width: 768px) {
+    .card-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .card {
+        width: 90%;
+    }
+}
+
+/* Adicionando cores suaves aos cards para melhorar o visual */
+.card:nth-child(1) {
+    background-color: #f4faff; /* Cor mais suave para o primeiro card */
+}
+
+.card:nth-child(2) {
+    background-color: #f9f9ff; /* Cor suave para o segundo card */
+}
+
+.card:nth-child(3) {
+    background-color: #f1f8e9; /* Cor suave para o terceiro card */
+}

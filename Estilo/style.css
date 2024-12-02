@@ -11,6 +11,7 @@ body, .navbar, .offcanvas {
         display: flex;
         align-items: center;
     }
+    
 
     /* Logo deslocada ligeiramente para a direita */
     .navbar-brand img {
@@ -235,4 +236,45 @@ body, .navbar, .offcanvas {
 .offcanvas .btn-primary:hover {
     background-color: #0033a0; /* Cor de fundo ao passar o mouse no botão Cadastre-se */
 }
+}
+
+
+/* Barra de navegação normal */
+.navbar {
+    background-color: #001d61;
+    transition: top 0.3s ease;  /* Transição suave para a mudança */
+}
+
+/* Quando a navbar estiver fixa */
+.navbar.fixed-navbar {
+    position: fixed; /* A navbar ficará fixa ao topo quando rolar */
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Adiciona sombra */
+}
+
+/* Ajuste para o estilo de navbar no mobile */
+@media (max-width: 991px) {
+    .navbar.fixed-navbar {
+        position: fixed; /* A navbar fica fixa em dispositivos móveis também */
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 1000;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Adiciona sombra */
+    }
+}
+
+/* Ajuste para a logo e o menu de navegação (desktop e mobile) */
+.navbar-brand img {
+    width: 80px; /* Ajuste o tamanho da logo para se adaptar ao mobile */
+    height: auto;
+}
+
+/* Ajuste para o botão hamburger no mobile */
+.navbar-toggler {
+    border: 2px solid white;
+    outline: none !important;
 }
