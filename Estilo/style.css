@@ -75,6 +75,7 @@ body, .navbar, .offcanvas {
         background-color: #001d61;
         color: #ffffff; /* Texto branco */
         border: 2px solid #001d61; /* Borda azul */
+        padding-left: 40px;
     }
 
     /* Estilo do botão Cadastre-se */
@@ -82,6 +83,7 @@ body, .navbar, .offcanvas {
         background-color: #ffffff;
         color: #001d61; /* Texto azul */
         border: 2px solid #001d61; /* Borda azul */
+       
     }
 
     /* Efeito de hover nos botões */
@@ -90,7 +92,10 @@ body, .navbar, .offcanvas {
         background-color: #f1f1f1; /* Cor de fundo no hover */
         color: #001d61; /* Texto azul no hover */
     }
+    
 }
+
+    
 
 /* ----- ESTILO PARA MOBILE ----- */
 @media (max-width: 991px) {

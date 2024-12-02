@@ -1,0 +1,101 @@
+ body, .navbar, .offcanvas {
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        /* ----- Estilo para Desktop ----- */
+        @media (min-width: 992px) {
+            .info-container {
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start; /* Alinhamento à esquerda */
+                justify-content: center;
+                height: 50vh;
+                padding-left: 60px;
+            }
+
+            .info-container h1 {
+                font-size: 2.5rem; /* Tamanho do título maior */
+                color: #001d61;
+                
+                
+            }
+
+            .info-container li {
+                font-size: 1.5rem; /* Texto do subtítulo */
+                list-style: none;
+                color: #666;
+                margin-top: -10px;
+            }
+
+            .btn-explorar {
+                background-color: #001d61;
+                color: white;
+                border: none;
+                padding: 8px 25px;
+                border-radius: 25px;
+                font-size: 1rem;
+                font-weight: 500;
+                margin-top: -15px;
+                text-decoration: none;
+            }
+
+            .btn-explorar:hover {
+                background-color: #0033a0; /* Azul mais escuro no hover */
+                color: white;
+            }
+
+            .linha {
+                border: 1px solid black;
+                width: 40%;
+                margin-left: 60px;
+                margin-top: -50px; /* Adiciona espaço acima da linha */
+                margin-bottom: 20px; /* Adiciona espaço abaixo da linha */
+               
+            }
+        }
+
+        /* ----- Estilo para Mobile ----- */
+        @media (max-width: 991px) {
+            .info-container {
+                padding: 20px;
+                text-align: left;
+            }
+
+            .info-container h1 {
+                font-size: 2rem; /* Tamanho do título reduzido */
+                color: #001d61;
+            }
+
+            .info-container li {
+                font-size: 1.2rem; /* Tamanho do subtítulo menor */
+                list-style: none;
+                color: #666;
+                margin-top: 5px;
+            }
+
+            .btn-explorar {
+                background-color: #001d61;
+                color: white;
+                border: none;
+                padding: 10px 25px;
+                border-radius: 25px;
+                font-size: 1rem;
+                font-weight: 500;
+                margin-top: 15px;
+                text-decoration: none;
+            }
+
+            .btn-explorar:hover {
+                background-color: #0033a0; /* Azul mais escuro no hover */
+                color: white;
+            }
+
+            .linha {
+                border: 1px solid black;
+                width: 50%;
+                margin-left: 20px;
+                margin-top: 20px; /* Adiciona espaço acima da linha */
+                margin-bottom: 20px; /* Adiciona espaço abaixo da linha */
+                
+            }
+        }
