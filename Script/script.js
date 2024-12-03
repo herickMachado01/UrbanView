@@ -54,3 +54,26 @@ window.addEventListener('scroll', function() {
 window.addEventListener('load', function() {
     handleCardAnimation();  // Verifica os cards ao carregar
 });
+
+
+// JS IMAGEM MAPA
+
+document.addEventListener("DOMContentLoaded", function () {
+    const image = document.querySelector('.animated-image');
+
+    // Função para verificar quando a imagem estiver visível
+    function handleScroll() {
+        const imagePosition = image.getBoundingClientRect().top;
+        const screenPosition = window.innerHeight;
+
+        if (imagePosition < screenPosition - 100) {
+            image.classList.add('show'); // Adiciona a classe que ativa a animação
+        }
+    }
+
+    // Evento de scroll para verificar a posição da imagem
+    window.addEventListener('scroll', handleScroll);
+
+    // Verifica logo no carregamento
+    handleScroll();
+});

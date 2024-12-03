@@ -1,3 +1,5 @@
+
+
 body, .navbar, .offcanvas {
     font-family: 'Montserrat', sans-serif;
 }
@@ -238,6 +240,7 @@ body, .navbar, .offcanvas {
 }
 }
 
+/* NAVEGAÇÂO DA BARRA PELO SITE */
 
 /* Barra de navegação normal */
 .navbar {
