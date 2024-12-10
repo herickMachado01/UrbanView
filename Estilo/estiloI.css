@@ -1,6 +1,7 @@
  
- .body{
+ html, .body{
     background-color: #f4f4f4;
+    overflow-x: hidden !important; 
  }
  body, .navbar, .offcanvas {
             font-family: 'Montserrat', sans-serif;
@@ -16,6 +17,7 @@
                 justify-content: center;
                 height: 50vh;
                 padding-left: 60px;
+                font-family: 'Montserrat', sans-serif;
             }
 
             .info-container h1 {
@@ -64,6 +66,7 @@
             .info-container {
                 padding: 20px;
                 text-align: left;
+                font-family: 'Montserrat', sans-serif;
             }
 
             .info-container h1 {
@@ -159,6 +162,7 @@
     justify-content: space-around;
     flex-wrap: wrap;
     margin: 20px 0;
+    font-family: 'Montserrat', sans-serif;
 }
 
 /* Estilo geral dos cards */
@@ -242,8 +246,9 @@
     font-size: 2.2rem;
     font-weight: 600;
     color: #000000; /* Cor do texto preta */
-   margin-left: 40px;
+    margin-left: 40px;
     margin-bottom: 30px;
+    font-family: 'Montserrat', sans-serif;
 
 }
 
@@ -329,6 +334,7 @@
     .btn-container-new {
         flex-direction: column;
         gap: 15px;
+        font-family: 'Montserrat', sans-serif;
     }
 
     .btn-login-new,
@@ -356,9 +362,21 @@
 
 /* FAQ */
 
+.container.faq-section {
+    background-color: #f7f7f7; /* Fundo azul */
+    border-radius: 8px; /* Borda arredondada */
+    padding: 30px 0; /* Remove o espaçamento lateral */
+    margin: 0; /* Remove margem padrão */
+    width: 100%; /* Ocupa toda a largura do elemento pai */
+    max-width: 100%; /* Garante que não há limite de largura */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Sombra para destaque */
+    font-family: 'Montserrat', sans-serif;
+}
+
+
 .faq-section {
     max-width: 800px;
-    margin: 50px auto; /* Centraliza e adiciona espaçamento no topo */
+    margin: 10px auto; /* Centraliza e adiciona espaçamento no topo */
     background: #f4f4f4; /* Fundo branco para contraste */
     border-radius: 12px; /* Bordas arredondadas */
     padding: 20px 30px;
@@ -368,7 +386,7 @@
 
 .faq-section h1 {
     text-align: center;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
     font-size: 2rem;
     font-weight: 600;
     color: #000000;
@@ -418,3 +436,118 @@
     transition: transform 0.3s ease;
 }
 
+
+/* Container principal */
+.contact-banner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #001d61; /* Fundo azul */
+    padding: 20px 40px;
+    border-radius: 20px;
+    max-width: 1000px; /* Largura máxima */
+    margin: 20px auto; /* Centraliza horizontalmente */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Estilo para o logo */
+.logo-container {
+    flex-shrink: 0;
+    width: 80px;
+    height: 80px;
+    background-color: white;
+    border-radius: 50%; /* Fundo redondo */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden; /* Garante que a imagem não ultrapasse os limites do círculo */
+}
+
+/* Imagem da logo */
+.logo {
+    width: 100%; /* Ocupa toda a largura do contêiner */
+    height: 100%; /* Ocupa toda a altura do contêiner */
+    object-fit: cover; /* Faz a imagem preencher o espaço sem distorcer */
+    margin-top: 3px;
+}
+/* Estilo do texto */
+.text-container {
+    flex-grow: 1;
+    margin-left: 20px;
+    color: white;
+}
+
+.text-container h3 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin: 0;
+}
+
+.text-container p {
+    font-size: 1rem;
+    margin: 5px 0 0 0;
+}
+
+/* Botão de ação */
+.button-container .btn-saiba-mais {
+    background-color: #007bff; /* Cor azul clara */
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 25px;
+    font-size: 1rem;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.button-container .btn-saiba-mais:hover {
+    background-color: #0056b3; /* Azul mais escuro no hover */
+}
+
+/* --- RESPONSIVIDADE --- */
+@media (max-width: 768px) {
+    .contact-banner {
+        flex-direction: column; /* Coloca os elementos em uma coluna */
+        align-items: center;
+        padding: 20px;
+    }
+
+    .logo-container {
+        flex-shrink: 0;
+        width: 80px;
+        height: 80px;
+        background-color: white;
+        border-radius: 50%; /* Fundo redondo */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        overflow: hidden; /* Garante que a imagem não ultrapasse os limites do círculo */
+    }
+    
+    /* Imagem da logo */
+    .logo {
+        width: 100%; /* Ocupa toda a largura do contêiner */
+        height: 100%; /* Ocupa toda a altura do contêiner */
+        object-fit: cover; /* Faz a imagem preencher o espaço sem distorcer */
+        margin-right: 20px;
+        
+    }
+
+    .text-container {
+        margin: 10px 0; /* Adiciona espaço entre os elementos */
+        text-align: center; /* Centraliza o texto */
+    }
+
+    .text-container h3 {
+        font-size: 1.2rem; /* Reduz o tamanho do título */
+    }
+
+    .text-container p {
+        font-size: 0.9rem; /* Reduz o tamanho do subtítulo */
+    }
+
+    .button-container .btn-saiba-mais {
+        font-size: 0.9rem; /* Reduz o tamanho do botão */
+        padding: 8px 16px; /* Ajusta o espaçamento interno do botão */
+    }
+}
