@@ -128,8 +128,7 @@
 .logo {
     max-width: 100%;
     height: auto;
-    max-height: 300px; /* Ajusta o tamanho da logo */
-    margin-top: -25px;
+    max-height: 250px; /* Ajusta o tamanho da logo */
 }
 
 /* Ajuste responsivo */
@@ -436,6 +435,7 @@
     transition: transform 0.3s ease;
 }
 
+/* CONTATO */
 
 /* Container principal */
 .contact-banner {
