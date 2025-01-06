@@ -96,3 +96,22 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     });
 });
+
+// Empresa card B
+// Função para observar elementos e adicionar a classe "visible" quando entram na tela
+const observer = new IntersectionObserver((entries, observer) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('visible');
+        observer.unobserve(entry.target); // Remove o observador depois que o elemento apareceu
+      }
+    });
+  });
+  
+  // Seleciona todos os elementos com a classe 'animate-on-scroll'
+  const elementsToAnimate = document.querySelectorAll('.animate-on-scroll');
+  elementsToAnimate.forEach(element => {
+    observer.observe(element);
+  });
+  
+  

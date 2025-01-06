@@ -1,0 +1,346 @@
+body, .navbar, .offcanvas {
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* ----- ESTILO PARA DESKTOP ----- */
+@media (min-width: 992px) {
+    /* Barra de navegação */
+    .navbar {
+        background-color: #001d61;
+        height: 80px;
+        display: flex;
+        align-items: center;
+    }
+    
+
+    /* Logo deslocada ligeiramente para a direita */
+    .navbar-brand img {
+        width: 100px;
+        height: auto;
+        max-height: 70px;
+        margin-left: 20px;
+    }
+
+    /* Centraliza os links horizontalmente */
+    .navbar-nav {
+        display: flex;
+        justify-content: center;
+        margin-left: 400px;
+    }
+
+    /* Links brancos */
+    .nav-link {
+        color: white !important;
+        font-weight: 500;
+        padding: 8px 20px;
+    }
+
+    /* Hover nos links */
+    .nav-link:hover {
+        color: #00b4fb !important;
+    }
+
+    /* Barra ativa de navegação */
+    .nav-link.active {
+        border-bottom: 3px solid #f1f1f1;
+    }
+
+    /* Removendo a borda branca da barra de navegação */
+    .navbar-nav .nav-item {
+        border-bottom: none;
+    }
+
+    /* Centraliza os botões na direita */
+    .navbar-collapse {
+        display: flex;
+        justify-content: flex-end; /* Alinha os botões à direita */
+        align-items: center; /* Centraliza verticalmente os botões */
+        height: 100%; /* Ocupa toda a altura da tela */
+    }
+
+    /* Estilo dos botões (Login e Cadastre-se) */
+    .btn-light,
+    .btn-primary {
+        margin-top: 7px; /* Removendo margem superior */
+        margin-bottom: 10px; /* Distância entre os botões */
+        padding: 10px 20px; /* Padding para o botão */
+        width: 30%; /* Tamanho do botão com largura 85% */
+        border-radius: 25px; /* Bordas arredondadas */
+        font-weight: 400; /* Texto mais grosso */
+        text-decoration: none; /* Remove qualquer sublinhado */
+        text-align: center;
+    }
+
+    /* Estilo do botão Login */
+    .btn-light {
+        background-color: #001d61;
+        color: #ffffff; /* Texto branco */
+        border: 2px solid #001d61; /* Borda azul */
+        padding-left: 40px;
+    }
+
+    /* Estilo do botão Cadastre-se */
+    .btn-primary {
+        background-color: #ffffff;
+        color: #001d61; /* Texto azul */
+        border: 2px solid #001d61; /* Borda azul */
+       
+    }
+
+    /* Efeito de hover nos botões */
+  
+    .btn-primary:hover {
+        background-color: #f1f1f1; /* Cor de fundo no hover */
+        color: #001d61; /* Texto azul no hover */
+    }
+    
+}
+
+    
+
+/* ----- ESTILO PARA MOBILE ----- */
+@media (max-width: 991px) {
+    /* Barra de navegação */
+    .navbar {
+        background-color: #001d61;
+        height: auto;
+        padding: 10px 15px;
+    }
+
+    /* Logo menor no mobile */
+    .navbar-brand img {
+        width: 60px;
+        height: auto;
+        max-height: 60px;
+        margin-left: 0; /* Sem margem no mobile */
+    }
+
+    /* Botão hamburguer */
+    .navbar-toggler {
+        border: 2px solid white;
+        outline: none !important;
+    }
+
+    .navbar-toggler:focus {
+        box-shadow: none;
+        border-color: white;
+    }
+
+    .navbar-toggler-icon {
+        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23ffffff' viewBox='0 0 30 30'%3E%3Cpath stroke='rgba%28255, 255, 255, 1%29' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+    }
+
+    /* Links no offcanvas (mobile) */
+    .offcanvas .nav-link {
+        color: black !important;
+        font-size: 17px;
+        text-align: left;
+        padding: 8px 15px;
+    }
+
+   /* Estilo do botão Login */
+.btn-light, 
+.btn-primary {
+    background-color: white;
+    color: #ffffff; /* Texto branco */
+    border: 2px solid #001d61; /* Borda azul */
+    padding: 10px 20px; /* Padding para o botão */
+    width: 85%; /* Tamanho do botão com largura 85% */
+    margin: 40px 28px; /* Centraliza o botão e adiciona margem nas laterais */
+    border-radius: 25px; /* Bordas arredondadas */
+}
+
+/* Estilo do botão Login */
+.btn-light {
+    background-color: #001d61;
+    color: #ffffff;
+    border: 2px solid #001d61;
+}
+
+
+    /* Estilo do botão Cadastre-se */
+    .navbar .btn-primary {
+        background-color: #001d61;
+        color: white;
+        border: none;
+    }
+    /* Efeito hover no mobile */
+    .offcanvas .nav-link:hover {
+        color: #001d61 !important;
+    }
+
+    /* Ajuste do offcanvas */
+    .offcanvas {
+        background-color: #f8f9fa; /* Fundo branco para o menu offcanvas */
+    }
+
+    /* Título do Offcanvas */
+    .offcanvas-title {
+        color: #001d61;
+    }
+
+    /* Estilo do botão fechar no offcanvas */
+    .btn-close {
+        filter: invert(0%);
+    }
+
+    /* Barra ativa de navegação no mobile */
+    .offcanvas .nav-link.active {
+        color: #001d61!important;
+    }
+
+    /* Linha de separação entre itens */
+    .offcanvas .nav-item {
+        border-bottom: 1px solid #d3d3d3; /* Linha cinza clara */
+    }
+
+    /* Botões no offcanvas, com margem lateral */
+    .offcanvas .btn {
+        width: 100%;
+        margin-top: 10px;
+        border-radius: 25px; /* Bordas arredondadas */
+    }
+
+/* Estilo do botão Login no offcanvas (mobile) */
+.offcanvas .btn-light {
+    background-color: white; /* Fundo branco */
+    color: #000000; /* Texto preto */
+    border: 2px solid #001d61; /* Borda azul */
+    padding: 10px 20px; /* Padding para o botão */
+    width: 85%; /* Tamanho do botão com largura 80% */
+    margin: 40px 28px; /* Centraliza o botão e adiciona margem nas laterais */
+    border-radius: 25px; /* Borda arredondada */
+}
+
+/* Estilo do botão Cadastre-se no offcanvas (mobile) */
+.offcanvas .btn-primary {
+    background-color: #001d61; /* Azul */
+    color: white; /* Texto branco */
+    border: none; /* Sem borda */
+    width: 85%; /* Tamanho do botão com largura 80% */
+    margin: 40px 28px; /* Centraliza o botão e adiciona margem nas laterais */
+    border-radius: 25px; /* Borda arredondada */
+    padding: 10px 20px;
+}
+
+/* Botões no offcanvas, com margem lateral */
+.offcanvas .btn {
+    margin-top: 10px; /* Adiciona margem superior */
+}
+
+/* Efeito hover nos botões */
+.offcanvas .btn-light:hover {
+    background-color: #f1f1f1; /* Cor de fundo ao passar o mouse no botão Login */
+}
+
+.offcanvas .btn-primary:hover {
+    background-color: #0033a0; /* Cor de fundo ao passar o mouse no botão Cadastre-se */
+}
+}
+
+/* NAVEGAÇÂO DA BARRA PELO SITE */
+
+/* Barra de navegação normal */
+.navbar {
+    background-color: #001d61;
+    transition: top 0.3s ease;  /* Transição suave para a mudança */
+}
+
+/* Quando a navbar estiver fixa */
+.navbar.fixed-navbar {
+    position: fixed; /* A navbar ficará fixa ao topo quando rolar */
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Adiciona sombra */
+}
+
+/* Ajuste para o estilo de navbar no mobile */
+@media (max-width: 991px) {
+    .navbar.fixed-navbar {
+        position: fixed; /* A navbar fica fixa em dispositivos móveis também */
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 1000;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Adiciona sombra */
+    }
+}
+
+/* Ajuste para a logo e o menu de navegação (desktop e mobile) */
+.navbar-brand img {
+    width: 80px; /* Ajuste o tamanho da logo para se adaptar ao mobile */
+    height: auto;
+}
+
+/* Ajuste para o botão hamburger no mobile */
+.navbar-toggler {
+    border: 2px solid white;
+    outline: none !important;
+}
+
+/* footer */
+
+/* Estilo geral do footer */
+/* Estilo geral do footer */
+.footer {
+    background-color: #001a52;
+    color: #fff;
+    padding: 20px 15px;
+    font-family: Arial, sans-serif;
+  }
+  
+  .footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .footer-logo img {
+    max-height: 50px;
+  }
+  
+  .footer-contact {
+    text-align: center;
+    font-size: 14px;
+  }
+  
+  .footer-contact p {
+    margin: 5px 0;
+  }
+  
+  .footer-social {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .footer-social a {
+    color: #fff;
+    font-size: 24px;
+    transition: color 0.3s;
+  }
+  
+  .footer-social a:hover {
+    color: #1da1f2;
+  }
+  
+  /* Responsividade */
+  @media (max-width: 768px) {
+    .footer-container {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .footer-logo {
+      margin-bottom: 15px;
+    }
+  
+    .footer-social {
+      justify-content: center;
+    }
+  }
+  

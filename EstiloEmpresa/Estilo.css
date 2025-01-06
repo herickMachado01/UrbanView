@@ -1,0 +1,203 @@
+/* Estilo para a seção "Por que registrar" */
+html, .body{
+    background-color: #f4f4f4;
+    overflow-x: hidden !important; 
+ }
+
+.why-register {
+    background-color: #f9f9f9;
+    padding: 50px 20px;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+  }
+  
+  .why-register .section-title {
+    font-size: 28px;
+    font-weight: 600;
+    color: #000000;
+    margin-bottom: 20px;
+  }
+  
+  .why-register .section-description {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 40px;
+  }
+  
+  .benefits {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+  }
+  
+  .benefit {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+  }
+  
+  .benefit:hover {
+    transform: translateY(-5px);
+  }
+  
+  .benefit i {
+    font-size: 36px;
+    color: #000000;
+    margin-bottom: 15px;
+  }
+  
+  .benefit h3 {
+    font-size: 18px;
+    font-weight: 500;
+    color: #000000;
+    margin-bottom: 10px;
+  }
+  
+  .benefit p {
+    font-size: 14px;
+    color: #666;
+    line-height: 1.5;
+  }
+  
+  /* Responsividade */
+  @media (max-width: 768px) {
+    .why-register {
+      padding: 30px 10px;
+    }
+  
+    .benefit {
+      padding: 15px;
+    }
+  }
+  
+  /* Elementos escondidos inicialmente */
+.animate-on-scroll {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+  }
+  
+  /* Elementos visíveis */
+  .animate-on-scroll.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+  
+
+  /* banner */
+  .contact-banner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #001d61; /* Fundo azul */
+    padding: 20px 40px;
+    border-radius: 20px;
+    max-width: 1000px; /* Largura máxima */
+    margin: 20px auto; /* Centraliza horizontalmente */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Estilo para o logo */
+.logo-container {
+    flex-shrink: 0;
+    width: 80px;
+    height: 80px;
+    background-color: white;
+    border-radius: 50%; /* Fundo redondo */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden; /* Garante que a imagem não ultrapasse os limites do círculo */
+}
+
+/* Imagem da logo */
+.logo {
+    width: 100%; /* Ocupa toda a largura do contêiner */
+    height: 100%; /* Ocupa toda a altura do contêiner */
+    object-fit: cover; /* Faz a imagem preencher o espaço sem distorcer */
+    margin-top: 3px;
+}
+/* Estilo do texto */
+.text-container {
+    flex-grow: 1;
+    margin-left: 20px;
+    color: white;
+}
+
+.text-container h3 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin: 0;
+}
+
+.text-container p {
+    font-size: 1rem;
+    margin: 5px 0 0 0;
+}
+
+/* Botão de ação */
+.button-container .btn-saiba-mais {
+    background-color: #007bff; /* Cor azul clara */
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 25px;
+    font-size: 1rem;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.button-container .btn-saiba-mais:hover {
+    background-color: #0056b3; /* Azul mais escuro no hover */
+}
+
+/* --- RESPONSIVIDADE --- */
+@media (max-width: 768px) {
+    .contact-banner {
+        flex-direction: column; /* Coloca os elementos em uma coluna */
+        align-items: center;
+        padding: 20px;
+    }
+
+    .logo-container {
+        flex-shrink: 0;
+        width: 80px;
+        height: 80px;
+        background-color: white;
+        border-radius: 50%; /* Fundo redondo */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        overflow: hidden; /* Garante que a imagem não ultrapasse os limites do círculo */
+    }
+    
+    /* Imagem da logo */
+    .logo {
+        width: 100%; /* Ocupa toda a largura do contêiner */
+        height: 100%; /* Ocupa toda a altura do contêiner */
+        object-fit: cover; /* Faz a imagem preencher o espaço sem distorcer */
+        
+        
+    }
+
+    .text-container {
+        margin: 10px 0; /* Adiciona espaço entre os elementos */
+        text-align: center; /* Centraliza o texto */
+    }
+
+    .text-container h3 {
+        font-size: 1.2rem; /* Reduz o tamanho do título */
+    }
+
+    .text-container p {
+        font-size: 0.9rem; /* Reduz o tamanho do subtítulo */
+    }
+
+    .button-container .btn-saiba-mais {
+        font-size: 0.9rem; /* Reduz o tamanho do botão */
+        padding: 8px 16px; /* Ajusta o espaçamento interno do botão */
+    }
+}
